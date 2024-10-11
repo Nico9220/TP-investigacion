@@ -6,7 +6,7 @@ header ("Cache-Control: no-cache, must-revalidate ");
 // CONFIGURACION APP//
 /////////////////////////////
 
-$directorio = '/PWD/'; // Escribir el directorio donde se encuentra el proyecto dentro del servidor
+$directorio = '/Investigacion/TP-investigacion'; // Escribir el directorio donde se encuentra el proyecto dentro del servidor
 define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'].$directorio);
 define('BASE_URL', 'http://'.$_SERVER['HTTP_HOST'].$directorio);
 define('STRUCTURE_PATH', ROOT_PATH.'Vista/Templates/');
