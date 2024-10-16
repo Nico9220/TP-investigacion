@@ -48,11 +48,11 @@ spl_autoload_register(
 
         );
         $directorys = array(
-            'Modelo/',
-            'Modelo/conector/',
-            'Control/',
+            'modelo/',
+            'modelo/conector/',
+            'control/',
             'utiles/',
-            'Test/',
+            'test/',
         );
         //print_object($directorys) ;
         foreach ($tps as $tp) {

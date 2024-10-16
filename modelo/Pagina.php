@@ -1,15 +1,15 @@
 <?php
-class Articulo
+class Pagina
 {
     private $id;
     private $titulo;
-    private $sinopsis;
+    private $contenido;
 
-    public function __construct($id, $titulo, $sinopsis)
+    public function __construct($id, $titulo, $contenido)
     {
         $this->id = $id;
         $this->titulo = $titulo;
-        $this->sinopsis = $sinopsis;
+        $this->contenido = $contenido;
     }
 
     public function getId()
@@ -22,9 +22,9 @@ class Articulo
         return $this->titulo;
     }
 
-    public function getSinopsis()
+    public function getContenido()
     {
-        return $this->sinopsis;
+        return $this->contenido;
     }
 
     public function setTitulo($titulo)
@@ -32,9 +32,9 @@ class Articulo
         $this->titulo = $titulo;
     }
 
-    public function setSinopsis($sinopsis)
+    public function setContenido($contenido)
     {
-        $this->sinopsis = $sinopsis;
+        $this->contenido = $contenido;
     }
 }
 ?>

@@ -13,5 +13,4 @@
 <script src="<?php echo BASE_URL ?>Vista/assets/js/jquery/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL ?>2/Vista/assets/js/librerias-plugins/jquery-validation/dist/jquery.validate.js"></script>
 <script src="<?php echo BASE_URL ?>Vista/assets/js/bootstrap.bundle.min.js"></script>
-<script src="<?php echo BASE_URL ?>Vista/assets/js/menu.js"></script>
 <script src="<?php echo BASE_URL ?>Vista/assets/js/valida.js"></script>
