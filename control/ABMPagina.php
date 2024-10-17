@@ -1,7 +1,8 @@
 <?php
-require_once '../Modelo/Conector/BaseDatos.php';
-require_once '../Modelo/Pagina.php';
-require_once '../vendor/erusev/parsedown/Parsedown.php'; // Asegúrate de tener Parsedown instalado
+include_once __DIR__ . '/../includes/configuracion.php';
+include_once ROOT_PATH . '/modelo/conector/BaseDatos.php';
+include_once ROOT_PATH . '/modelo/Pagina.php';
+include_once ROOT_PATH . '/vendor/erusev/parsedown/Parsedown.php'; // Asegúrate de tener Parsedown instalado
 
 function agregarPagina($titulo, $contenido) {
     $bd = new BaseDatos();

@@ -6,9 +6,13 @@ header ("Cache-Control: no-cache, must-revalidate ");
 // CONFIGURACION APP//
 /////////////////////////////
 
+
 $directorio = '/TP-investigacion/'; // Escribir el directorio donde se encuentra el proyecto dentro del servidor
 define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'].$directorio);
-define('BASE_URL', 'http://'.$_SERVER['HTTP_HOST'].$directorio);
-define('STRUCTURE_PATH', ROOT_PATH.'Vista/Estructura/');
-$_SESSION['ROOT'] = ROOT_PATH;
-$ROOT = ROOT_PATH; // Agrega esta línea para definir la variable $ROOT
+define('BASE_URL', 'http://'.$_SERVER['HTTP_HOST'].$directorio );
+define('INCLUDES_PATH', ROOT_PATH.'includes/');
+define('STRUCTURE_PATH', ROOT_PATH.'vista/Estructura/');
+$_SESSION["ROOT"] = ROOT_PATH;
+include_once(ROOT_PATH.'util/funciones.php');
+?>
+

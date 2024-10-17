@@ -1,8 +1,8 @@
 <?php
 // Incluir la lógica de la base de datos y funciones
-include('../configuracion.php');
-include('../Control/ABMPagina.php');
-include('Estructura/head.php');
+include '../../control/ABMPagina.php';
+include_once __DIR__ . '/../../includes/configuracion.php';
+include_once(STRUCTURE_PATH . 'head.php');
 
 // Obtener el ID de la página a borrar
 $id = isset($_GET['id']) ? $_GET['id'] : null;
@@ -15,6 +15,7 @@ if ($id) {
 }
 
 // Después de borrar, redirigir a la lista de páginas o mostrar un mensaje
+$parsedown = new Parsedown();
 $paginas = obtenerPaginas();
 ?>
 
@@ -38,12 +39,12 @@ $paginas = obtenerPaginas();
         <?php else: ?>
             <p>No se encontraron páginas.</p>
         <?php endif; ?>
-        <a class="btn btn-primary" href="formulario.php">Volver</a>
+        <a class="btn btn-primary" href="index.php">Volver</a>
     </div>
 </main>
 </html>
 
 
 <?php
-include('Estructura/footer.php');
+include_once(STRUCTURE_PATH . 'footer.php');
 ?>

@@ -1,10 +1,9 @@
 <?php
 // Incluir configuraciones y ParseDown
-include('../configuracion.php');
-include('../Control/ABMPagina.php'); // Asegúrate de incluir tu controlador ABM
-include('../vendor/autoload.php');
-include('./utiles/funciones.php');
-include('Estructura/head.php');
+include_once __DIR__ . '/../../includes/configuracion.php';
+include '../../control/ABMPagina.php'; // Asegúrate de incluir tu controlador ABM
+include ROOT_PATH . '/vendor/autoload.php';
+include_once(STRUCTURE_PATH . 'head.php');
 
 // Obtengo los datos del formulario que encapsulé
 $datos = data_submitted(); // Esta función debe estar en funciones.php
@@ -26,7 +25,7 @@ if (isset($datos['action'])) {
     // elseif ($datos['action'] === 'Borrar') {
     //     $mensaje = borrarPagina($titulo, $contenido);
     // }
-     elseif ($datos['action'] === 'Modificar' && $id !== null) {
+    elseif ($datos['action'] === 'Modificar' && $id !== null) {
         $mensaje = modificarPagina($id, $titulo, $contenido);
     }
 }
@@ -61,7 +60,7 @@ $paginas = obtenerPaginas();
         <?php else: ?>
             <p>No se encontraron páginas.</p>
         <?php endif; ?>
-        <a class="btn btn-primary" href="formulario.php">Volver</a>
+        <a class="btn btn-primary" href="index.php">Volver</a>
     </div>
 </main>
 </html>

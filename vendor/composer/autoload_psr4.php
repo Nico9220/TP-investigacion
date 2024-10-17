@@ -6,4 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'avadim\\FastExcelReader\\' => array($vendorDir . '/avadim/fast-excel-reader/src/FastExcelReader'),
+    'avadim\\FastExcelHelper\\' => array($vendorDir . '/avadim/fast-excel-helper/src/FastExcelHelper'),
 );

@@ -1,5 +1,7 @@
 {
     "require": {
-        "erusev/parsedown": "^1.7"
+        "erusev/parsedown": "^1.7",
+        "avadim/fast-excel-helper": "^1.2",
+        "avadim/fast-excel-reader": "^2.20"
     }
 }

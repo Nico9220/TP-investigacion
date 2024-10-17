@@ -1,11 +1,11 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-include('../Control/ABMPagina.php');
-include('../configuracion.php');
-include('Estructura/head.php');
+include '../../control/ABMPagina.php';
+include_once __DIR__ . '/../../includes/configuracion.php';
+include_once(STRUCTURE_PATH . 'head.php');
 ?>
 
-<main class="container mt-5">
+<main class="index mt-5">
+<div class="container mt-5">
         <h1 class="text-center mb-4">Creador de páginas web simples</h1>
         <form action="formAccion.php" method="post" class="border p-4 shadow-sm rounded">
             <div class="mb-3">
@@ -51,11 +51,12 @@ include('Estructura/head.php');
         <?php endif; ?>
 
 
+  
+    </div>
     </main>
 
-
 <?php
-include('Estructura/footer.php');
+include_once(STRUCTURE_PATH . 'footer.php');
 ?>
 
 

@@ -1,8 +1,8 @@
 <?php
 // Incluir la lógica de obtención de la página por ID
-include('../configuracion.php');
-include('../Control/ABMPagina.php');
-include('Estructura/head.php');
+include '../../control/ABMPagina.php';
+include_once __DIR__ . '/../../includes/configuracion.php';
+include_once(STRUCTURE_PATH . 'head.php');
 
 // Obtener la página según el ID
 $id = isset($_GET['id']) ? $_GET['id'] : null;
@@ -31,11 +31,11 @@ if ($id) {
         <textarea id="contenido" name="contenido" class="form-control" rows="6" required><?php echo htmlspecialchars($pagina['contenido']); ?></textarea>
     </div>
     <button type="submit" name="action" value="Modificar" class="btn btn-primary">Guardar Cambios</button>
-    <a href="formulario.php" class="btn btn-secondary">Cancelar</a>
+    <a href="index.php" class="btn btn-secondary">Cancelar</a>
 </form>
 
 
 
 <?php
-include('Estructura/footer.php');
+include_once(STRUCTURE_PATH . 'footer.php');
 ?>

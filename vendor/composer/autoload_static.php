@@ -4,8 +4,27 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7e1495fb2e8a2820ba6766561cd0f083
+class ComposerStaticInitf493960dbf3229f8998effb35c5e910d
 {
+    public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'avadim\\FastExcelReader\\' => 23,
+            'avadim\\FastExcelHelper\\' => 23,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'avadim\\FastExcelReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/avadim/fast-excel-reader/src/FastExcelReader',
+        ),
+        'avadim\\FastExcelHelper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/avadim/fast-excel-helper/src/FastExcelHelper',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'P' => 
         array (
@@ -23,8 +42,10 @@ class ComposerStaticInit7e1495fb2e8a2820ba6766561cd0f083
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInit7e1495fb2e8a2820ba6766561cd0f083::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7e1495fb2e8a2820ba6766561cd0f083::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf493960dbf3229f8998effb35c5e910d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf493960dbf3229f8998effb35c5e910d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf493960dbf3229f8998effb35c5e910d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf493960dbf3229f8998effb35c5e910d::$classMap;
 
         }, null, ClassLoader::class);
     }
